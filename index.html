@@ -124,11 +124,6 @@
 </head>
 <body>
 
-    <!-- Audio Element: Musik Lofi/Piano Santai & Romantis -->
-    <audio id="romanticMusic" loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-    </audio>
-
     <!-- Konten Box -->
     <div class="card">
         <div class="icon">✨🌸</div>
@@ -146,16 +141,7 @@
 
     <script>
         function startSurprise() {
-            // 1. Putar Musik Kontrol Volume
-            var music = document.getElementById('romanticMusic');
-            music.volume = 0.5;
-            
-            // Perintah paksa putar saat diklik
-            music.play().catch(function(error) {
-                console.log("Izin audio browser diblokir:", error);
-            });
-
-            // 2. Memunculkan Efek Hujan Hati
+            // Memunculkan Efek Hujan Hati
             for (var i = 0; i < 30; i++) {
                 setTimeout(function() {
                     var heart = document.createElement('div');
